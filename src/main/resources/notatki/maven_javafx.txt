@@ -1,0 +1,10 @@
+1) Stworzyć działający projekt JavaFX
+2) Na "Projekt" w zakładce po lewej dać "Add framework support"
+3) Wybrać maven; dać OK
+    [Teraz zmieniło układ folderów; aplikacja nie startuje; pisze "location required"]
+4) Zmodyfikować linie startową do:
+        Parent root =
+                FXMLLoader.load(getClass().getClassLoader().getResource("sample.fxml"));
+5) Przesunąć file "sample.xml" do folderu:
+	/src/main/resources
+
